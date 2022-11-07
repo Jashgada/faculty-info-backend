@@ -21,7 +21,7 @@ db.mongoose
   });
 
 var corsOptions = {
-  origin: "http://localhost:3000"
+  origin: "https://main--lighthearted-queijadas-a6258c.netlify.app/",
 };
 
 app.use(cors(corsOptions));
