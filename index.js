@@ -2,6 +2,9 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 const db = require("./app/models");
 db.mongoose
