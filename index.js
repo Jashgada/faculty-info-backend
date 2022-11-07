@@ -21,7 +21,7 @@ db.mongoose
   });
 
 var corsOptions = {
-  origin: "https://main--lighthearted-queijadas-a6258c.netlify.app/",
+  origin: process.env.corsOrigin,
 };
 
 app.use(cors(corsOptions));
