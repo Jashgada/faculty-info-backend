@@ -22,6 +22,7 @@ db.mongoose
 
 var corsOptions = {
   origin: process.env.corsOrigin,
+  credentials: true
 };
 
 app.use(cors(corsOptions));
