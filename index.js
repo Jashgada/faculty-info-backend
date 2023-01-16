@@ -5,7 +5,6 @@ const app = express();
 
 require("dotenv").config();
 
-
 const db = require("./app/models");
 db.mongoose
   .connect(db.url, {

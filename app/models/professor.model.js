@@ -34,7 +34,9 @@ module.exports = mongoose => {
         "honor": String,
         "year": Number
     });
-    
+    const Service = new Schema({
+        "service": String
+    });
     const Publication = new Schema({
         "publication": String
     });
@@ -54,6 +56,7 @@ module.exports = mongoose => {
             nonAcademicExperiences:[NonAcademicExperience],
             certsAndProfessionalRegistrations:[CertsAndProfessionalRegistration],
             memberships:[Membership],
+            services:[Service],
             honors:[Honor],
             publications:[Publication],
             professionalDevelopments:[ProfessionalDevelopment]
